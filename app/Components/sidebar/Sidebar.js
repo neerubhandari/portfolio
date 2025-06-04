@@ -6,9 +6,9 @@ const Sidebar = () => {
   const [toggle, showMenu] = useState(false);
   return (
     <>
-      <aside className={toggle ? "aside show-menu" : "aside"}>
+      <aside className={`aside ${toggle ? "show-menu" : ""}`}>
         <a href="#home" className="nav__logo">
-          <img src="https://i.ibb.co/w7NMgzw/User-Image.jpg" alt="sideLogo" />
+          NB
         </a>
 
         <nav className="nav">

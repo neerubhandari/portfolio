@@ -8,19 +8,17 @@ const About = () => {
       <h2 className="section__title">About Me</h2>
 
       <div className="about__container grid">
-        <img
-          src="https://i.ibb.co/k89WFzY/about-us-pic.png"
-          alt=""
-          className="about__img"
-        />
+        <img src="profile.png" alt="" className="about__img" />
 
         <div className="">
           <div className="about__info">
             <p className="about__description">
-              I am eager to pursue a dynamic career in IT as a Full Stack
-              Developer, leveraging my 4 years of experience in building
-              scalable, efficient, and user-focused web applications across both
-              frontend and backend technologies.
+              I am currently working as a Full Stack Developer with 4 years of
+              experience, specializing in building scalable, efficient, and
+              user-centric web applications. I bring expertise across both
+              frontend and backend technologies, and I am passionate about
+              delivering high-quality solutions that drive business value and
+              enhance user experience.
             </p>
             <a href="/resume.pdf" download={"Niru's Resume"} className="btn">
               Download Resume

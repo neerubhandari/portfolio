@@ -1,46 +1,55 @@
-
-const Menu =[
+const Menu = [
   {
-    id:1,
-    Image: "https://i.ibb.co/LxcHc59/NIKE-LANDING-PAGE.png",
-    title:"Nike Landing Page ",
-    category: "Design"
+    id: 1,
+    Image: "jira-clone.png",
+    title: "Jira Clone ",
+    category: "Applications",
+    href: "https://github.com/neerubhandari/Track-Stack",
   },
   {
-    id:2,
-    Image: "https://i.ibb.co/2tWsbWh/Hero-Section.jpg",
-    title:"Online Course selling Website Design",
-    category: "Design"
+    id: 2,
+    Image: "expense-tracker.png",
+    title: "Expense Tracker",
+    category: "Applications",
+    href: "https://github.com/neerubhandari/expense-tracker",
   },
   {
-    id:3,
-    Image: "https://i.ibb.co/Wk2KTqs/RickShaw.jpg",
-    title:"RickShaw APP Design",
-    category: "Design"
+    id: 3,
+    Image: "recipe-picker.png",
+    title: "Recipe Picker",
+    category: "Applications",
+    href: "https://github.com/neerubhandari/RecipeHub",
   },
   {
-    id:4,
-    Image: "https://i.ibb.co/zP8Srzm/Screenshot-2023-09-24-182118.png",
-    title:"Modern Chair Showcase APP",
-    category: "Applications"
+    id: 4,
+    Image: "ecommerce.png",
+    title: "Ecommerce App",
+    category: "Applications",
+    href: "https://github.com/neerubhandari/Ecommerce",
   },
-  {
-    id:5,
-    Image: "https://i.ibb.co/Yfys33S/weather-app.png",
-    title:"Weather APP",
-    category: "Applications"
-  },
-  {
-    id:6,
-    Image: "https://i.ibb.co/0GtVbHq/dev-detetc.png",
-    title:"Dev Detection",
-    category: "Applications"
-  },
-  {
-    id:7,
-    Image: "https://i.ibb.co/zspXP6d/flank.png",
-    title:"FLANK a gaming app ",
-    category: "Case Study"
-  },
-]
-export default Menu
+  // {
+  //   id: 4,
+  //   Image: "https://i.ibb.co/zP8Srzm/Screenshot-2023-09-24-182118.png",
+  //   title: "Modern Chair Showcase APP",
+  //   category: "Applications",
+  // },
+  // {
+  //   id: 5,
+  //   Image: "https://i.ibb.co/Yfys33S/weather-app.png",
+  //   title: "Weather APP",
+  //   category: "Applications",
+  // },
+  // {
+  //   id: 6,
+  //   Image: "https://i.ibb.co/0GtVbHq/dev-detetc.png",
+  //   title: "Dev Detection",
+  //   category: "Applications",
+  // },
+  // {
+  //   id: 7,
+  //   Image: "https://i.ibb.co/zspXP6d/flank.png",
+  //   title: "FLANK a gaming app ",
+  //   category: "Case Study",
+  // },
+];
+export default Menu;

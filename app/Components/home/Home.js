@@ -13,7 +13,7 @@ const Home = () => {
       <section className="home container" id="home">
         <div className="intro">
           <img
-            src="https://i.ibb.co/zS38BWV/9434621.png"
+            src="profile.png"
             height={145}
             width={160}
             alt=""
