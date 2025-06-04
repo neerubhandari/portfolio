@@ -10,7 +10,7 @@ import PortfolioModal from "./Components/modal/PortfolioModal";
 const page = () => {
   return (
     <>
-      <PortfolioModal />
+      {/* <PortfolioModal /> */}
       <Sidebar />
       <main className="main">
         <Home />
