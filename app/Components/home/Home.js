@@ -19,8 +19,8 @@ const Home = () => {
             alt=""
             className="home__img"
           />
-          <h1 className="home__name">Chetan Kesare</h1>
-          <span className="home__education">I am a Full-Stack UX Designer</span>
+          <h1 className="home__name">Niru Bhandari</h1>
+          <span className="home__education">I am a Full-Stack Developer</span>
 
           <HeaderSocials />
 

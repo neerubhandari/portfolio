@@ -1,12 +1,9 @@
 {
-  "name": "myfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "author": {
-    "name": "Chetan Kesare"
-  },
-  "github": {
-    "link": "https://github.com/0x1Luffy"
+    "name": "Niru Bhandari"
   },
   "scripts": {
     "dev": "next dev",

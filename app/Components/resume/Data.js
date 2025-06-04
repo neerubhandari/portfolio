@@ -1,45 +1,51 @@
 // Config Driven UI
 
-const Data =[
-    {
-        id:1,
-        category:"education",
-        icon:"icon-graduation",
-        year: "2017-2018",
-        title:"Class 10 CBSE",
-        desc:"70%",
-    },
-    {
-        id:2,
-        category:"education",
-        icon:"icon-graduation",
-        year: "2018-2021",
-        title:"Diploma In Computer Engineering",
-        desc:"91.20%",
-    },
-    {
-        id:3,
-        category:"education",
-        icon:"icon-graduation",
-        year: "2021-2024",
-        title:"B.E In Computer Engineering",
-        desc:"8.4 CGPA",
-    },
-    {
-        id:4,
-        category:"experience",
-        icon:"icon-briefcase",
-        year: "July-Augest-2023",
-        title:"CodeSoft",
-        desc:"UI/UX Design Intern at CodeSoft.",
-    },
-    {
-        id:4,
-        category:"experience",
-        icon:"icon-briefcase",
-        year: "June-July-2020",
-        title:"Domain Computer Education",
-        desc:"CISCO Router Switch Configuration and AWS Cloud Essentail.",
-    },
+const Data = [
+  {
+    id: 1,
+    category: "education",
+    icon: "icon-graduation",
+    year: "2014-2016",
+    title: "High School(Science Major)",
+  },
+  {
+    id: 2,
+    category: "education",
+    icon: "icon-graduation",
+    year: "2016-2021",
+    title: "B.E In Computer Engineering",
+  },
+  {
+    id: 3,
+    category: "experience",
+    icon: "icon-briefcase",
+    year: "Feb 2024 - Apr 2025",
+    title: "Tekkon",
+    desc: "Full Stack Developer",
+  },
+  {
+    id: 4,
+    category: "experience",
+    icon: "icon-briefcase",
+    year: "Feb 2021 - Jan 2024",
+    title: "WesionaryTEAM",
+    desc: "Software Developer",
+  },
+  {
+    id: 5,
+    category: "experience",
+    icon: "icon-briefcase",
+    year: "Nov 2020 - Feb 2021",
+    title: "Codavatar",
+    desc: "Full Stack Developer Intern",
+  },
+  {
+    id: 5,
+    category: "experience",
+    icon: "icon-briefcase",
+    year: "Aug 2020 - Nov 2020",
+    title: "Technorio",
+    desc: "Web Designer Intern",
+  },
 ];
-export default Data
+export default Data;
