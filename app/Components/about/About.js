@@ -13,12 +13,11 @@ const About = () => {
         <div className="">
           <div className="about__info">
             <p className="about__description">
-              I am currently working as a Full Stack Developer with 4 years of
-              experience, specializing in building scalable, efficient, and
-              user-centric web applications. I bring expertise across both
-              frontend and backend technologies, and I am passionate about
-              delivering high-quality solutions that drive business value and
-              enhance user experience.
+              I am a Full Stack Developer with 4 years of experience,
+              specializing in building scalable, efficient, and user-centric web
+              applications. I bring expertise across both frontend and backend
+              technologies, and I am passionate about delivering high-quality
+              solutions that drive business value and enhance user experience.
             </p>
             <a href="/resume.pdf" download={"Niru's Resume"} className="btn">
               Download Resume
