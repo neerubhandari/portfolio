@@ -19,7 +19,11 @@ const About = () => {
               technologies, and I am passionate about delivering high-quality
               solutions that drive business value and enhance user experience.
             </p>
-            <a href="/resume.pdf" download={"Niru's Resume"} className="btn">
+            <a
+              href="/updated-resume.pdf"
+              download={"Niru's Resume"}
+              className="btn"
+            >
               Download Resume
             </a>
           </div>
