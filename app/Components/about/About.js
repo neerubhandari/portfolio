@@ -20,7 +20,7 @@ const About = () => {
               solutions that drive business value and enhance user experience.
             </p>
             <a
-              href="/updated-resume.pdf"
+              href="/frontend-resume.pdf"
               download={"Niru's Resume"}
               className="btn"
             >
