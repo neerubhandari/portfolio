@@ -48,7 +48,6 @@ const About = () => {
             </div>
           </div>
 
-          {/* BUTTON */}
           <div className="mt-10">
             <a
               href="resume.pdf"
