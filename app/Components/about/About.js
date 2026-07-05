@@ -12,7 +12,6 @@ const About = () => {
           About <span className="text-[#6C63FF]">Me</span>
         </h2>
 
-        {/* CONTENT */}
         <div className="text-center">
           <p className="text-lg leading-8 text-gray-600">
             Full Stack Developer with 4+ years of experience building scalable,
