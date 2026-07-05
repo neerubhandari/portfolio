@@ -6,13 +6,22 @@ import About from "./Components/about/About";
 import Resume from "./Components/resume/Resume";
 import Portfolio from "./Components/portfolio/Portfolio";
 import Contact from "./Components/contact/Contact";
-import PortfolioModal from "./Components/modal/PortfolioModal";
-const page = () => {
+import Header from "./Components/Header";
+// import PortfolioModal from "./Components/modal/PortfolioModal";
+
+const Page = () => {
   return (
     <>
       {/* <PortfolioModal /> */}
-      <Sidebar />
-      <main className="main">
+      <Header />
+
+      <main
+        className="
+          main scroll-smooth
+          px-4 sm:px-6 lg:px-0
+          lg:ml-[var(--sidebar-width,5.5rem)]
+        "
+      >
         <Home />
         <About />
         <Resume />
@@ -23,4 +32,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

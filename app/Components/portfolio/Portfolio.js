@@ -1,54 +1,93 @@
 "use client";
 
 import React, { useState } from "react";
-import "./Portfolio.css";
 import Menu from "./Menu";
 
+const categories = ["Everything", "Applications", "Case Study", "Design"];
+
 const Portfolio = () => {
-  const [Items, setItems] = useState(Menu);
+  const [activeCategory, setActiveCategory] = useState("Everything");
 
-  const filterItem = (categoryItem) => {
-    const updatedItems = Menu.filter((curElem) => {
-      return curElem.category === categoryItem;
-    });
+  const filteredItems =
+    activeCategory === "Everything"
+      ? Menu
+      : Menu.filter((item) => item.category === activeCategory);
 
-    setItems(updatedItems);
-  };
   return (
-    <section className="work container section" id="work">
-      <h2 className="section__title">Recent Works</h2>
-      <div className="work__filters">
-        <span className="work__item" onClick={() => setItems(Menu)}>
-          Everthing
-        </span>
-        <span className="work__item" onClick={() => filterItem("Applications")}>
-          Applications
-        </span>
-        {/* <span className="work__item" onClick={() => filterItem("Case Study")}>
-          Case Study
-        </span>
-        <span className="work__item" onClick={() => filterItem("Design")}>
-          Design
-        </span> */}
-      </div>
+    <section id="work" className=" bg-gray-50 py-9">
+      <div className="container mx-auto max-w-6xl px-4">
+        {/* HEADER */}
+        <div className="mb-12 text-center">
+          <p className="mb-2 text-xs uppercase tracking-[0.3em] text-[#6C63FF]">
+            Selected Work
+          </p>
+          <h2 className="text-4xl font-bold">Recent Projects</h2>
+        </div>
 
-      <div className="work__container grid">
-        {Items.map((elem) => {
-          const { id, Image, title, category, href } = elem;
-          return (
-            <div className="work__card" key={id}>
-              <div className="work__thumbnail">
-                <img src={Image} alt="" className="work__img" />
-                <div className="work__mask"></div>
-              </div>
+        {/* FILTERS */}
+        <div className="mb-12 flex flex-wrap justify-center gap-3">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat)}
+              className={`rounded-full px-5 py-2 text-sm font-medium transition ${
+                activeCategory === cat
+                  ? "bg-[#6C63FF] text-white shadow-md"
+                  : "bg-white text-gray-600 hover:bg-gray-100"
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
 
-              <span className="work__category">{category}</span>
-              <h3 className="work__title">{title}</h3>
-              <a href={href} className="work__button"></a>
-              <i className="icon-link work__button-icon"></i>
-            </div>
-          );
-        })}
+        {/* GRID */}
+        {filteredItems.length > 0 ? (
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {filteredItems.map((elem, index) => {
+              const { id, Image, title, category, href } = elem;
+
+              return (
+                <a
+                  key={id}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group overflow-hidden rounded-2xl bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+                  style={{ animationDelay: `${index * 60}ms` }}
+                >
+                  {/* IMAGE */}
+                  <div className="relative h-48 overflow-hidden bg-gray-100">
+                    <img
+                      src={Image}
+                      alt={title}
+                      loading="lazy"
+                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    />
+
+                    {/* subtle overlay */}
+                    <div className="absolute inset-0 bg-black/0 transition group-hover:bg-black/10"></div>
+                  </div>
+
+                  {/* CONTENT */}
+                  <div className="p-5">
+                    <span className="text-xs uppercase tracking-wide text-gray-400">
+                      {category}
+                    </span>
+
+                    <h3 className="mt-1 text-base font-semibold text-gray-800">
+                      {title}
+                    </h3>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="py-16 text-center text-gray-400">
+            No projects in this category yet.
+          </div>
+        )}
       </div>
     </section>
   );

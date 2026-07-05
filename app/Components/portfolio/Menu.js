@@ -1,20 +1,34 @@
 const Menu = [
   {
     id: 1,
+    Image: "ResumeBuilder.png",
+    title: "Resume Builder",
+    category: "Applications",
+    href: "https://github.com/neerubhandari/resume_builder",
+  },
+  {
+    id: 2,
+    Image: "warderly.png",
+    title: "Warderly",
+    category: "Applications",
+    href: "https://github.com/neerubhandari/wandr",
+  },
+  {
+    id: 3,
     Image: "jira-clone.png",
     title: "Jira Clone ",
     category: "Applications",
     href: "https://github.com/neerubhandari/Track-Stack",
   },
   {
-    id: 2,
+    id: 4,
     Image: "expense-tracker.png",
     title: "Expense Tracker",
     category: "Applications",
     href: "https://github.com/neerubhandari/expense-tracker",
   },
   {
-    id: 3,
+    id: 5,
     Image: "recipe-picker.png",
     title: "Recipe Picker",
     category: "Applications",
@@ -27,6 +41,7 @@ const Menu = [
     category: "Applications",
     href: "https://github.com/neerubhandari/Ecommerce",
   },
+
   // {
   //   id: 4,
   //   Image: "https://i.ibb.co/zP8Srzm/Screenshot-2023-09-24-182118.png",

@@ -18,8 +18,9 @@
 }
 
 .work__container {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.875rem;
+  gap: 2.75rem;
 }
 
 .work__card {
@@ -112,6 +113,7 @@
 @media screen and (max-width: 768px) {
   .work__container {
     grid-template-columns: 310px;
+    gap: 1.875rem;
   }
 
   .work__filters {
@@ -122,5 +124,6 @@
 @media screen and (max-width: 350px) {
   .work__container {
     grid-template-columns: 1fr;
+    gap: 1.875rem;
   }
 }

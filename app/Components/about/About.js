@@ -1,71 +1,92 @@
 import React from "react";
-import "./About.css";
-import AboutBox from "./AboutBox";
 
 const About = () => {
   return (
-    <section className="about container section" id="about">
-      <h2 className="section__title">About Me</h2>
+    <section id="about" className="relative  bg-gray-50 py-16">
+      {/* Background Glow (subtle) */}
+      <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-violet-500/10 blur-3xl"></div>
 
-      <div className="about__container grid">
-        <img src="profile.png" alt="" className="about__img" />
+      <div className=" mx-auto max-w-4xl px-4">
+        {/* Title */}
+        <h2 className="mb-10 text-center text-4xl font-bold">
+          About <span className="text-[#6C63FF]">Me</span>
+        </h2>
 
-        <div className="">
-          <div className="about__info">
-            <p className="about__description">
-              I am a Full Stack Developer with 4 years of experience,
-              specializing in building scalable, efficient, and user-centric web
-              applications. I bring expertise across both frontend and backend
-              technologies, and I am passionate about delivering high-quality
-              solutions that drive business value and enhance user experience.
-            </p>
+        {/* CONTENT */}
+        <div className="text-center">
+          <p className="text-lg leading-8 text-gray-600">
+            Full Stack Developer with 4+ years of experience building scalable,
+            high-performance web applications using React, Next.js, Node.js, and
+            TypeScript. Experienced in designing and developing RESTful APIs,
+            responsive frontend interfaces, and cloud-based backend systems
+            deployed on AWS. Strong expertise in the full software development
+            lifecycle, including system design, CI/CD pipelines, and Agile
+            methodologies. Recently focused on AI-powered application
+            development, integrating OpenAI APIs to build intelligent,
+            context-aware systems such as chat-based assistants and automated
+            response generation workflows. Passionate about building AI-driven,
+            performant, and maintainable applications with clean architecture,
+            reusable components, and strong emphasis on user experience and
+            scalability.
+          </p>
+
+          {/* STATS */}
+          <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <div className="rounded-xl bg-white p-6 shadow-sm">
+              <h3 className="text-2xl font-bold text-[#6C63FF]">4+</h3>
+              <p className="text-sm text-gray-500">Years Experience</p>
+            </div>
+
+            <div className="rounded-xl bg-white p-6 shadow-sm">
+              <h3 className="text-2xl font-bold text-[#6C63FF]">15+</h3>
+              <p className="text-sm text-gray-500">Projects</p>
+            </div>
+
+            <div className="rounded-xl bg-white p-6 shadow-sm">
+              <h3 className="text-2xl font-bold text-[#6C63FF]">8+</h3>
+              <p className="text-sm text-gray-500">Happy Clients</p>
+            </div>
+          </div>
+
+          {/* BUTTON */}
+          <div className="mt-10">
             <a
-              href="/frontend-resume.pdf"
-              download={"Niru's Resume"}
-              className="btn"
+              href="resume.pdf"
+              download
+              className="inline-block rounded-xl bg-[#6C63FF] px-6 py-3 font-semibold text-white transition hover:-translate-y-1 hover:shadow-md"
             >
               Download Resume
             </a>
           </div>
+        </div>
 
-          {/* <div className="about__skills grid">
-            <div className="skills__data">
-              <div className="skills__titles">
-                <h3 className="skills__name">Development</h3>
-                <span className="skills__number">90%</span>
-              </div>
+        {/* SKILLS */}
+        <div className="mt-20 grid gap-6 sm:grid-cols-3">
+          <div className="rounded-2xl bg-white p-6 shadow-sm">
+            <h3 className="mb-2 font-semibold">Frontend Engineering</h3>
+            <p className="text-sm text-gray-500">
+              React, Next.js, TypeScript, JavaScript (ES6+), HTML5, CSS3,
+              Tailwind CSS, UI Performance & Animations
+            </p>
+          </div>
 
-              <div className="skills__bar">
-                <span className="skills__percentage development"></span>
-              </div>
-            </div>
+          <div className="rounded-2xl bg-white p-6 shadow-sm">
+            <h3 className="mb-2 font-semibold">Backend & Cloud</h3>
+            <p className="text-sm text-gray-500">
+              Node.js, Express.js, REST APIs, MongoDB, PostgreSQL, MySQL, AWS
+              (EC2, S3, Lambda), Docker, CI/CD
+            </p>
+          </div>
 
-            <div className="skills__data">
-              <div className="skills__titles">
-                <h3 className="skills__name">UI/UX Designing</h3>
-                <span className="skills__number">80%</span>
-              </div>
-
-              <div className="skills__bar">
-                <span className="skills__percentage ui__design"></span>
-              </div>
-            </div>
-
-            <div className="skills__data">
-              <div className="skills__titles">
-                <h3 className="skills__name">DSA</h3>
-                <span className="skills__number">40%</span>
-              </div>
-
-              <div className="skills__bar">
-                <span className="skills__percentage DSA"></span>
-              </div>
-            </div>
-          </div> */}
+          <div className="rounded-2xl bg-white p-6 shadow-sm">
+            <h3 className="mb-2 font-semibold">Architecture & Tools</h3>
+            <p className="text-sm text-gray-500">
+              System Design, Microservices, Agile/Scrum, Git, GitHub, Jira,
+              Postman, AI Integration
+            </p>
+          </div>
         </div>
       </div>
-
-      {/* <AboutBox/> */}
     </section>
   );
 };
