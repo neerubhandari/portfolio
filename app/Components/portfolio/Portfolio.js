@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Menu from "./Menu";
+import Image from "next/image";
 
 const categories = ["Everything", "Applications", "Case Study", "Design"];
 
@@ -45,7 +46,7 @@ const Portfolio = () => {
         {filteredItems.length > 0 ? (
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {filteredItems.map((elem, index) => {
-              const { id, Image, title, category, href } = elem;
+              const { id, image, title, category, href } = elem;
 
               return (
                 <a
@@ -58,13 +59,7 @@ const Portfolio = () => {
                 >
                   {/* IMAGE */}
                   <div className="relative h-48 overflow-hidden bg-gray-100">
-                    <img
-                      src={Image}
-                      alt={title}
-                      loading="lazy"
-                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                    />
-
+                    <Image src={image} alt="project" width={600} height={400} />
                     {/* subtle overlay */}
                     <div className="absolute inset-0 bg-black/0 transition group-hover:bg-black/10"></div>
                   </div>

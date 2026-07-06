@@ -18,7 +18,7 @@ const Home = () => {
 
         {/* Name */}
         <h1 className="mt-6 text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl text-gray-900">
-          Hi, I'm <span className="text-violet-600">Niru Bhandari</span>
+          Hi,I&apos;m <span className="text-violet-600">Niru Bhandari</span>
         </h1>
 
         {/* Role */}

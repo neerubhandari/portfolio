@@ -13,7 +13,7 @@ const Contact = () => {
             </p>
 
             <h2 className="mb-5 text-3xl font-semibold leading-snug text-gray-900">
-              Let's build something amazing.
+              Let&apos;s build something amazing.
             </h2>
 
             <p className="text-gray-600 leading-7">
